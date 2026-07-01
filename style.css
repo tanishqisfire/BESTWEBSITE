@@ -1,4 +1,19 @@
+:root{
+
+    --light-color: #FFFF;
+    --dark-color: #0000;
+    --header-color: rgba(229, 128, 27, 0.4);
+
+
+}
+
+
+
+
 img{
+
+
+
 
     width: 350px;
 }
@@ -6,5 +21,70 @@ body{
 
     text-align:center;
     font-family: fantasy;
-    background: rgba(186, 151, 24, 0.786)
+    background: rgba(186, 151, 24, 0.786);
+     color: var(--dark-color);
+     background-image: linear-gradient(45deg, gray, orange );
 }
+header{
+    text-align: left;
+    vertical-align: top;
+    margin: 30px;
+    color: var(--header-color)
+}
+footer{
+    text-align: right;
+    border: solid 5px rgb(235, 64, 52);
+    padding: 20px;
+    
+    
+}
+.grid{
+    display: grid;
+    grid-template-areas:
+    "a c"
+    "b c";
+    gap: 10px;
+    margin: 30px;
+    background-color: var(--dark-color);
+}
+.first{
+    grid-area: a;
+    background-color: var(--light-color);
+    color:aqua;
+
+
+}
+.second{
+    grid-area: b;
+    background-color: var(--header-color);
+    color:azure;
+
+}
+.box{
+    padding: 20px;
+    margin: 40px;
+    align-items: center;
+}
+
+.animated{
+    animation: wobble 1s ease-in-out infinite alternate
+}
+@keyframes{
+    wobbles
+}
+
+.flex-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+
+}
+
+.item{
+    background: red;
+    padding: 20px;
+    color: gray;
+}
+
+
