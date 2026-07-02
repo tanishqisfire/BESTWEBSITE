@@ -1,7 +1,7 @@
 :root{
 
     --light-color: #FFFF;
-    --dark-color: #0000;
+    --dark-color: #7113;
     --header-color: rgba(229, 128, 27, 0.4);
 
 
@@ -18,12 +18,12 @@ img{
     width: 350px;
 }
 body{
-
+    
     text-align:center;
     font-family: fantasy;
-    background: rgba(186, 151, 24, 0.786);
+    background-image: linear-gradient(45deg, rgb(15, 235, 52), rgb(127, 48, 127));
      color: var(--dark-color);
-     background-image: linear-gradient(45deg, gray, orange );
+     
 }
 header{
     text-align: left;
@@ -33,7 +33,6 @@ header{
 }
 footer{
     text-align: right;
-    border: solid 5px rgb(235, 64, 52);
     padding: 20px;
     
     
@@ -46,6 +45,7 @@ footer{
     gap: 10px;
     margin: 30px;
     background-color: var(--dark-color);
+
 }
 .first{
     grid-area: a;
@@ -60,18 +60,28 @@ footer{
     color:azure;
 
 }
+.third{
+    grid-area: c;
+    background-color: pink;
+    color:rgb(38, 202, 202);
+
+}
 .box{
     padding: 20px;
-    margin: 40px;
+    margin: 0px;
     align-items: center;
+    border: none;
+    
 }
 
 .animated{
     animation: wobble 1s ease-in-out infinite alternate
 }
-@keyframes{
-    wobbles
-}
+@keyframes wobble{
+        0%{transform:rotate(-20deg);}
+        100%{transform:rotate(20deg);}
+    }
+
 
 .flex-container{
     display: flex;
@@ -82,9 +92,66 @@ footer{
 }
 
 .item{
-    background: red;
+    background: rgb(70, 40, 9);
     padding: 20px;
     color: gray;
 }
 
+#day3{
+    background-image: linear-gradient(45deg, orange, yellow);
+    
+}
 
+.thisisfun{
+    display: grid;
+    grid-template-areas:
+    "a b"
+    "a c";
+    gap: 10px;
+    margin: 30px;
+    background-color: rgb(107, 119, 33);
+}
+.redcap{
+    grid-area: a;
+    background-color: lightpink;
+    color: rgb(243, 21, 21);
+
+}
+.bluecap{
+    grid-area: b;
+    background-color: lightblue;
+    color: rgb(21, 21, 243);
+
+}
+.greencap{
+    grid-area: c;
+    background-color: lightgreen;
+    color: green;
+}
+.fun{
+    padding: 20px;
+    margin: 0px;
+    align-items: center;
+    border: none;
+    
+}
+.bossflexer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+.peasant{
+    background: rgb(177, 7, 35);
+    padding: 20px;
+    color: rgb(68, 56, 56);
+
+}
+.dancin{
+    animation: dance 1s ease-in-out infinite alternate
+
+}
+@keyframes dance{
+        0%{transform:rotate(-40deg);}
+        100%{transform:rotate(40deg);}
+}
