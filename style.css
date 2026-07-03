@@ -155,3 +155,7 @@ footer{
         0%{transform:rotate(-40deg);}
         100%{transform:rotate(40deg);}
 }
+
+#image2{
+    display: none;
+}
